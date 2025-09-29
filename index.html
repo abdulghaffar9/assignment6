@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step form</title>
+    <style>
+      .main {
+        width: 300%;
+        /* background-color: rgb(21, 21, 105); */
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .step1 {
+        width: 30%;
+        /* background-color: yellow; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 5px;
+        height: 500px;
+      }
+      .field1 {
+        width: inherit;
+        height: inherit;
+        padding: 12px 2px;
+        display: flex;
+        flex-direction: column;
+      }
+      .next1 {
+        margin-top: 2px;
+      }
+      .step2 {
+        width: 30%;
+        /* background-color: red; */
+        margin-right: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+      }
+      #ste1{
+       width: 300px;
+       height: 30px;
+       padding: 5px;
+       margin: 5px;
+       background-color: green;
+       border-radius: 10px;
+       border: none;
+       margin-left: 30px;
+       margin-top: 50px;
+
+      }
+      #ste1 a{
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+      }
+      .field2 {
+        width: inherit;
+        height:80%;
+        padding: 12px 2px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+      }
+      .btn{
+        width: 300px;
+        height: 30px;
+        padding: 5px;
+        margin: 5px;
+        background-color: green;
+        border: 1px solid green;
+        color: white;
+        border-radius: 10px;
+      }
+      .btn a{
+        font-style: normal;
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+
+      }
+      .submit{
+        height: 500px;
+        background-color: white;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 150px;
+
+      }
+      #sub{
+        width: 300px;
+        height: 50px;
+        color: white;
+        background-color: green;
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid green;
+        border-radius: 10px;
+        font-size: 18px;
+        margin-right: 50px;
+      }
+  
+      #sub a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="step1" id="step1">
+      
+        <fieldset class="field1">
+          <legend>Account</legend>
+
+          <label for="email">Email</label>
+          <br />
+          <input
+            type="email"
+            name="account"
+            id="email"
+            placeholder="Enter your email"
+          />
+          <br />
+          <label for="password">Password</label>
+          <br />
+          <input type="password" name="account" id="password" />
+         <button id="ste1"> <a href="#step2" class="next1">Next</a></button>
+        </fieldset>
+      </div>
+
+      <div id="step2" class="step2">
+       
+        <fieldset class="field2">
+          <legend>Personal Details</legend>
+  
+          <label for="first-name">First Name</label>
+          <br>
+          <input type="text" name="name" id="first-name" placeholder="Enter your first name">
+          <br>
+          <label for="last-name">Last Name</label>
+          <br>
+          <input type="text" name="name" id="last-name">
+          <br>
+          <label for="cnic">CNIC</label>
+          <br>
+          <input type="text" name="cnic" id="cnic">
+          <br>
+          <label for="social">Social Links</label>
+          <br>
+          <input type="text" name="name" id="social">
+          <br>
+         
+        <button class="btn"><a href="#sub">Next</a></button>
+        <button class="btn"><a href="#step1">Back</a></button>
+       </fieldset>
+
+     
+    </div>
+
+    <div class="submit">
+      <button id="sub">Submit Details</button>
+      <button id="sub"><a href="#step2">Back</a></button>
+     </div>
+    </div>
+  </body>
+</html>
